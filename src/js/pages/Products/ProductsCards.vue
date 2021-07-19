@@ -43,15 +43,15 @@ export default {
   components: {},
   data() {
     return {
-      products: [],
-      currentPage: 1,
-      pageCount: 2,
-      perPage: 50,
-      totalCount: 100,
+      products: [], // это вероятно можно удалить
+      currentPage: 1, //
+      pageCount: 2, //
+      perPage: 50, //
+      totalCount: 100, // пагинация должна тянуться из стора, высчитывать кол-во страниц для компонента paginate
     };
   },
   mounted(){
-    this.products = this._products
+    this.products = this._products // это вероятно можно удалить
   },
   computed: {
     _products() {
